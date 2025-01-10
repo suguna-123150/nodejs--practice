@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>hello world</h1>
+    </body>
+    <script>
+        const url = "https://upgraded-disco-pjwprv6pqwx627pj4-3333.app.github.dev/"
+
+        fetch(url,{
+            method: "POST",
+            body: JSON.stringify({
+              name: "priya",
+              age: 22,
+              rollNo:312241
+            }),
+            headers: {
+                'Content-Type':'application/json'
+            }    
+    })
+        .then((response)=>{
+            console.log(response)
+        })
+    </script>
+</html>
